@@ -7,7 +7,10 @@
     margin-right:auto
 }
 body{
-    font-family:Cousine,monospace
+    font-family:Cousine,monospace;
+    background-image: url(https://cdn.dribbble.com/users/3888210/screenshots/10844495/media/7930e8d1abab57f374e03b6f6ef8b6a0.jpg);
+
+
 }
 .modified{
     width:60%
@@ -78,7 +81,8 @@ i{
     padding:5px!important
 }
 .btn .btn-primary .toggle-on {
-    border-color: #AAA !important;
+    border-color: #f2fcfb !important;
+    background-color: #b0ece3 !important;
 }
 .toggle-switch{
     width:200px
@@ -89,15 +93,19 @@ i{
 }
 .toggle>.toggle-group>.btn{
     color:#fff
+    background-color: #b0ece3 !important;
+}
+.toggle>.toggle-group>.btn:hover {
+    background-color: #fbfdfd3b !important
 }
 .toggle>.toggle-group>.toggle-off,.toggle>.toggle-group>.toggle-on{
     padding-left:25px
+    background-color: #b0ece3 !important;
 }
 .toggle[disabled], .toggle[disabled] > .toggle-group > .btn{
-    background-color: #AAAAAA;
+    background-color: #b0ece3 !important;
     opacity: 1;
     cursor: not-allowed !important;
-     border-color: #AAA !important;
 }
 .message-form{
     width:97%;
@@ -119,6 +127,7 @@ i{
     padding-left:0;
     padding-bottom:0;
     padding-top:0
+    background-color: #ffb6a3!important;
 }
 #userinfo .time-info{
     display:inline-block;
@@ -127,27 +136,51 @@ i{
     padding-top:9px;
     font-size: 12px;
 }
+label {
+    background-color: #b0ece3 !important;
+    color: white !important;
+}
+
 #userinfo .name-info{
     display:inline-block;
     padding:.75rem;
-    background-color:#007bff;
+    background-color:#ffe9e2 !important;
     color:#fff;
     border-radius: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 2px;
+    margin-top: 4.5px;
     margin-bottom: 2px;
 }
+
 footer{
     height:100px;
-    border-top:1px solid #DDD
+    border-top:1px solid #DDD;
+}
+button {
+    background-color: #b0ece3 !important;
+    border-color: #f2fcfb !important;
+}
+.toggle-group {
+     background-color: #b0ece3 !important;
+     border-color: transparent !important;
+}
+.toggle {
+    border-color: #f2fcfb !important;
 }
 .new-user-joined{
     text-align:center;
-    background-color:#222;
+    background-color: #88627b00;
     color:#fff;
     padding-top:10px!important;
     padding-bottom:10px!important
+}
+.toggle .btn .btn-default {
+    border-color: #f2fcfb !important;
+}
+#send {
+    border-color: #f2fcfb !important;
+    color: white;
 }
 .text-footer{
     text-align:center;
@@ -165,4 +198,24 @@ footer{
     .modified{
         width:100%
     }
+}
+#generate-room-code:hover {
+     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+       transform: translate3d(0, 0, 0);
+       perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
 }

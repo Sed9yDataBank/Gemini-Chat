@@ -6,6 +6,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
@@ -16,6 +17,13 @@
     </noscript>
     <div class="container modified">
         <header>
+            <img src="https://i.ibb.co/74SP6FZ/logo-transparent.png" width="500px" style="position: relative;
+
+bottom: -130px;
+
+display: inline-block;
+
+left: -222px;">
 
         </header>
 
@@ -25,8 +33,8 @@
                 <input id="toggle-chat-type" type="checkbox" data-toggle="toggle" data-off="Switch to Private chat!"
                     data-on="Switch to Public chat!" data-onstyle="primary" data-offstyle="default" data-height="40">
                 
-                <div id="room-code-box" class="float-right" style="display: none; height: 40px;">
-                    <button id="generate-room-code" class="btn btn-warning">Room Code</button>
+                <div id="room-code-box" class="float-right" style="display: none; height: 40px;color: white !important;">
+                    <button id="generate-room-code" style="color: white !important;" class="btn btn-warning animated bounce delay-2s">Room Code</button>
                 </div>
             </div>
 
@@ -97,8 +105,8 @@
                 <!-- to show messages -->
                 <div class="row">
                     <div class="col-md-12">
-                        <table id="conversation" class="table table-striped">
-                            <tbody id="userinfo"></tbody>
+                        <table id="conversation" class="table table-striped" style="background-color: transparent !important;">
+                            <tbody id="userinfo" style="color: #fffcf4;"></tbody>
                         </table>
                     </div>
                 </div>
@@ -120,11 +128,11 @@
                     </form>
                 </div>
             </div>
-
         </section>
     </div>
     <footer>
         <div class="container modified">
+            <img src="https://i.ibb.co/GF8r8hH/Peachy-Girl-removebg-preview.png" style="float: right;position:absolute;right:80px;">
 
         </div>
     </footer>

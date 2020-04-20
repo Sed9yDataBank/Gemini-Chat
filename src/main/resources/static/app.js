@@ -40,7 +40,7 @@ function public() {
     $('#private').hide();
     $('#room-code-box').hide()
     isPrivateModeEnabled = false;
-    $(".margin-zero > .toggle").css("cssText", "width: 100% !important;height: 40px");
+    $(".margin-zero > .toggle").css("cssText", "width: 100% !important;height: 40px;border-color: #f2fcfb !important;background-color:#b0ece3 !important;");
 }
 
 function setConnected(e) {
